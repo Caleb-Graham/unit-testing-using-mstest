@@ -1,0 +1,9 @@
+C:\Users\11cal\source\repos\unit-testing-using-mstest\unit-testing-using-mstest\unit-testing-using-mstest\bin\Debug\netcoreapp3.1\unit-testing-using-mstest.deps.json
+C:\Users\11cal\source\repos\unit-testing-using-mstest\unit-testing-using-mstest\unit-testing-using-mstest\bin\Debug\netcoreapp3.1\unit-testing-using-mstest.dll
+C:\Users\11cal\source\repos\unit-testing-using-mstest\unit-testing-using-mstest\unit-testing-using-mstest\bin\Debug\netcoreapp3.1\unit-testing-using-mstest.pdb
+C:\Users\11cal\source\repos\unit-testing-using-mstest\unit-testing-using-mstest\unit-testing-using-mstest\obj\Debug\netcoreapp3.1\unit-testing-using-mstest.csprojAssemblyReference.cache
+C:\Users\11cal\source\repos\unit-testing-using-mstest\unit-testing-using-mstest\unit-testing-using-mstest\obj\Debug\netcoreapp3.1\unit-testing-using-mstest.AssemblyInfoInputs.cache
+C:\Users\11cal\source\repos\unit-testing-using-mstest\unit-testing-using-mstest\unit-testing-using-mstest\obj\Debug\netcoreapp3.1\unit-testing-using-mstest.AssemblyInfo.cs
+C:\Users\11cal\source\repos\unit-testing-using-mstest\unit-testing-using-mstest\unit-testing-using-mstest\obj\Debug\netcoreapp3.1\unit-testing-using-mstest.csproj.CoreCompileInputs.cache
+C:\Users\11cal\source\repos\unit-testing-using-mstest\unit-testing-using-mstest\unit-testing-using-mstest\obj\Debug\netcoreapp3.1\unit-testing-using-mstest.dll
+C:\Users\11cal\source\repos\unit-testing-using-mstest\unit-testing-using-mstest\unit-testing-using-mstest\obj\Debug\netcoreapp3.1\unit-testing-using-mstest.pdb
