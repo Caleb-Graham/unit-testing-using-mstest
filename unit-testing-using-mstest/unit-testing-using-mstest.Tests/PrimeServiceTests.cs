@@ -17,8 +17,8 @@ namespace unit_testing_using_mstest.Tests
         }
         */
 
-        [DataTestMethod]
-        [DataRow(-1)]
+        [DataTestMethod]    // Allows you to test multiple inputs in one unit test
+        [DataRow(-1)]   
         [DataRow(0)]
         [DataRow(1)]
 
