@@ -10,7 +10,7 @@ namespace HW2
         {
             var appointment = new Appointment()
             {
-                Name = "James",
+                Name = "Caleb",
                 StartDateTime = DateTime.Now.AddHours(1),
                 EndDateTime = DateTime.Now.AddHours(2),
                 Price = 100D
@@ -69,14 +69,21 @@ namespace HW2
 
             var total = CompleteTransaction(items);
 
-            var grandTotal = shippingAmount + taxAmount + total;
+            double grandTotal = GrandTotal(shippingAmount, taxAmount, total);
+
             Console.WriteLine("============");
             Console.WriteLine($"Grand Total: {grandTotal.ToString("C")}");
             Console.WriteLine();
 
         }
 
-        static double CalculateTax(List<ITaxable> items)
+
+        public static double GrandTotal(double shipping, double tax, double total)     // Test for if the formula is working properly
+        {
+            return shipping + tax + total;
+        }
+
+        public static double CalculateTax(List<ITaxable> items)    // Test for
         {
             double tax = 0D;
 
@@ -89,7 +96,7 @@ namespace HW2
 
         }
 
-        static double CalculateShipping(List<IShippable> items)
+        public static double CalculateShipping(List<IShippable> items) // Test for
         {
             double shipping = 0D;
 
@@ -102,13 +109,15 @@ namespace HW2
             return shipping;
         }
 
-        static double CompleteTransaction(List<IPurchasable> items)
+        public static double CompleteTransaction(List<IPurchasable> items) // Test for
         {
             var total = 0D;
             items.ForEach(p => p.Purchase());
             items.ForEach(p => total += p.Price);
             return total;
         }
+
+
     }
 
     public class Appointment : IPurchasable
@@ -131,18 +140,19 @@ namespace HW2
         public double TaxRate { get; set; }
         public double ShippingRate { get; set; }
 
-        public void Purchase()
+        public void Purchase()  // This method does not return a value. So I do not think I need to write a unit test.
+                                // Please let me know if this is not the case.
         {
             Console.WriteLine($"Purchasing {Title} for {Price.ToString("C0")}.");
         }
 
-        public double Ship()
+        public double Ship()    // Test for if ShippingRate matches its return statement
         {
             Console.WriteLine($"    ShippingRate: {ShippingRate.ToString("C0")}");
             return ShippingRate;
         }
 
-        public double Tax()
+        public double Tax()     // Test for if the tax (Price * TaxRate) matches its return statement
         {
             var tax = Price * TaxRate;
             Console.WriteLine($"    TaxRate: {TaxRate} = {tax}");
