@@ -16,7 +16,6 @@ namespace HW2Tests
         // Expected is what you SHOULD get
         // Actual is what you are actually getting
 
-
         // I wanted to stick with the theme of making sure all the functions return the correct value
 
 
@@ -64,24 +63,6 @@ namespace HW2Tests
 
             // Assert
             Assert.AreEqual(expected, actual);
-        }
-
-
-        [TestMethod]
-        public void CheckGrandTotalComputesCorrectly()  
-        // Got this from the discussion board in order to test the formulas not accessible in the main
-        {
-            // Arange 
-            double shippingAmount = 2;
-            double taxAmount = 2;
-            double total = 30.50;
-            double grandTotal;
-
-            // Act
-            grandTotal = Program.GrandTotal(shippingAmount, taxAmount, total);
-
-            // Assert
-            Assert.AreEqual(34.50, grandTotal);
         }
 
 
@@ -151,7 +132,7 @@ namespace HW2Tests
 
         [TestMethod]
         public void CompleteTransaction()
-        // Tests that CompleteTransaction(items) is 
+        // Tests that CompleteTransaction(items) is equal to the total price
         {
             // Arange
             List<IPurchasable> purchase = new List<IPurchasable>();
@@ -196,7 +177,22 @@ namespace HW2Tests
 
 
 
+        [TestMethod]
+        public void CheckGrandTotalComputesCorrectly()
+        // Got this from the discussion board in order to test the formulas not accessible in the main
+        {
+            // Arange 
+            double shippingAmount = 2;
+            double taxAmount = 2;
+            double total = 30.50;
+            double grandTotal;
 
+            // Act
+            grandTotal = Program.GrandTotal(shippingAmount, taxAmount, total);
+
+            // Assert
+            Assert.AreEqual(34.50, grandTotal);
+        }
 
 
 
